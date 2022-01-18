@@ -1,1 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&display=swap" rel="stylesheet">
+
+    <title></title>
+    <style>
+	  .h1, .h2, .h3, .h4, .h5, .h6, div, p {color: white}
+	  h1 { font-size: 200px; font-family: 'Playfair Display', serif;  }
+	  h2 { font-size: 50px; font-family: 'Playfair Display', serif; letter-spacing: 2px;color: #611818; }
+	  .red {background:#611818;}
+	  .bg {background: url("/Users/brycemizoguchi/Downloads/Coding Challenge Assets/Coding-Challenge-Image.png") no-repeat right; background-size: cover; border-bottom: 2px solid white}
+	  .height {height: 100vh;}
+	  .width {max-width: 100vw;}
+	  .grid {display: grid}
+	  .bottom-right {
+		  position: absolute;
+		  bottom: 20px;
+		  right: 0px
+	  }
+	  .word-position {
+		  position: absolute;
+		  left: 120px;
+		  bottom: 200px;
+	  }
+	  .plus-btn {
+		  margin-right: 10px
+	  }
+	  .close-btn {
+		  position: absolute;
+		  top: 20px;
+		  right: 20px 
+	  }
+	  .more-btn {
+	      background-color: #611818;
+	      padding: 15px 40px;
+		  background: linear-gradient(90deg, rgba(97,24,24,1) 0%, rgba(153,104,87,1) 100%);
+		  font-family: ArialMT;
+		  font-size: 16px;
+		  color: #FFFFFF;
+		  letter-spacing: 1.69px;
+		  text-align: center;
+		  text-transform: uppercase;
+		  text-decoration: none;
+	  }
+	  .more-btn:hover {
+		  color: white;
+		  background: linear-gradient(90deg, rgba(153,104,87,1) 0%, rgba(97,24,24,1) 100%);
+	  }
+	  .link {
+		  margin-left: 85px;
+		  text-decoration: none;
+		  color: white;
+		  font-size: 18px;
+		  font-family: Arial, sans-serif;
+		  font-weight: 200
+	  }
+	  .link:hover {
+		  color: white;
+	  }
+	  #popup {
+		  opacity: 0;
+		  width: 0px;
+		  height: 0px;
+		  transition: ease-in .2s
+
+	  }
+	  .popup-div {
+		position: absolute;
+		top: 10%;
+		bottom: 10%;
+		left: 120px;
+		background: white;
+		color: #611818;
+		padding: 50px;
+	  }
+	  .later {
+		opacity: 0;
+	    transition: ease-in 1.2s 
+	  }
+	  .show {
+		z-index: 1000;
+		opacity: 1!important
+	  }
+	  .show p{
+	  	color: gray;
+	  	margin: 20px 0 50px 0;
+	  	font-family: ArialMT;
+		font-size: 14px;
+		color: #505050;
+		letter-spacing: 0.35px;
+		line-height: 30px;
+	  }
+	  .show .later {
+		  opacity: 1
+	  }
+	  .red-line {
+        height: 2px;
+        background-color: #611818;
+        width: 225px;
+        margin-top: 20px;
+        background-image: linear-gradient(left , white 2%, #611818 50%, white 98%);
+        background-image: -o-linear-gradient(left , white 2%, #611818 50%, white 98%);
+        background-image: -moz-linear-gradient(left , white 2%, #611818 50%, white 98%);
+        background-image: -webkit-linear-gradient(left , white 2%, #611818 50%, white 98%);
+        background-image: -ms-linear-gradient(left , white 2%, #611818 50%, white 98%);
+        background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.0, #611818), color-stop(0.98, white) );
+	  }
+	  #hide {
+		z-index: 1000;
+	  }
+	  .hide {
+		display: none
+	  }
+	</style>
+  </head>
+  <body>
+	  <div class="container width">
+		  <div class="row">
+		    <div class="col-sm-3 red height">
+			    <div id="hide" class="word-position">
+		    		<h1>Explore</h1>
+		    		<a class="link" id="btn" href="#" onclick="document.querySelector('#popup').classList.add('show'); document.querySelector('#hide').classList.add('hide');">
+			    		<img class="plus-btn" src="/Users/brycemizoguchi/Downloads/Coding Challenge Assets/Plus.svg" alt="Plus sign" width="30"> 
+			    		More Details
+			    	</a>
+		    	</div>
+		    	<div id="popup">
+			    	<div class="popup-div col-sm-5">
+				    	<div class="later">
+				    		<a class="btn">
+				    		<img class="close-btn" src="/Users/brycemizoguchi/Downloads/close-btn.svg" alt="Close Button" width="15" onclick="document.querySelector('#popup').classList.remove('show'); document.querySelector('#hide').classList.remove('hide');" > 
+					    	</a>
+				    		<h2>Explore</h2>
+				    		<div class="red-line"></div>  
+				    		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
+				    		<a class="more-btn" href="https://brycemizoguchi.github.io/challenge/">Read more</a>
+					    </div>
+			    	</div>
+		    	</div>
+		    </div>
+			<div class="col-sm-9 bg height">
+				<div class="grid bottom-right">
+					<a class="btn">
+			    		<img src="/Users/brycemizoguchi/Downloads/Coding Challenge Assets/Facebook.svg" alt="Facebook"> 
+			    	</a>
+			    	<a class="btn">
+			    		<img src="/Users/brycemizoguchi/Downloads/Coding Challenge Assets/Instagram.svg" alt="Instagram"> 
+			    	</a>
+				</div>
+			</div>
+		  </div>
+		</div>
+  </body>
+</html>
