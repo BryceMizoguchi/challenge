@@ -17,7 +17,7 @@
 	  h1 { font-size: 200px; font-family: 'Playfair Display', serif;  }
 	  h2 { font-size: 50px; font-family: 'Playfair Display', serif; letter-spacing: 2px;color: #611818; }
 	  .red {background:#611818;}
-	  .bg {background: url("/Users/brycemizoguchi/Downloads/Coding Challenge Assets/Coding-Challenge-Image.png") no-repeat right; background-size: cover; border-bottom: 2px solid white}
+	  .bg {background: url("assets/Coding-Challenge-Image.png") no-repeat right; background-size: cover; border-bottom: 2px solid white}
 	  .height {height: 100vh;}
 	  .width {max-width: 100vw;}
 	  .grid {display: grid}
@@ -129,7 +129,7 @@
 			    <div id="hide" class="word-position">
 		    		<h1>Explore</h1>
 		    		<a class="link" id="btn" href="#" onclick="document.querySelector('#popup').classList.add('show'); document.querySelector('#hide').classList.add('hide');">
-			    		<img class="plus-btn" src="/Users/brycemizoguchi/Downloads/Coding Challenge Assets/Plus.svg" alt="Plus sign" width="30"> 
+			    		<img class="plus-btn" src="assets/Plus.svg" alt="Plus sign" width="30"> 
 			    		More Details
 			    	</a>
 		    	</div>
@@ -137,7 +137,7 @@
 			    	<div class="popup-div col-sm-5">
 				    	<div class="later">
 				    		<a class="btn">
-				    		<img class="close-btn" src="/Users/brycemizoguchi/Downloads/close-btn.svg" alt="Close Button" width="15" onclick="document.querySelector('#popup').classList.remove('show'); document.querySelector('#hide').classList.remove('hide');" > 
+				    		<img class="close-btn" src="assets/close-btn.svg" alt="Close Button" width="15" onclick="document.querySelector('#popup').classList.remove('show'); document.querySelector('#hide').classList.remove('hide');" > 
 					    	</a>
 				    		<h2>Explore</h2>
 				    		<div class="red-line"></div>  
@@ -150,10 +150,10 @@
 			<div class="col-sm-9 bg height">
 				<div class="grid bottom-right">
 					<a class="btn">
-			    		<img src="/Users/brycemizoguchi/Downloads/Coding Challenge Assets/Facebook.svg" alt="Facebook"> 
+			    		<img src="assets/Facebook.svg" alt="Facebook"> 
 			    	</a>
 			    	<a class="btn">
-			    		<img src="/Users/brycemizoguchi/Downloads/Coding Challenge Assets/Instagram.svg" alt="Instagram"> 
+			    		<img src="assets/Instagram.svg" alt="Instagram"> 
 			    	</a>
 				</div>
 			</div>
