@@ -103,16 +103,16 @@
 		  opacity: 1
 	  }
 	  .red-line {
-        height: 2px;
-        background-color: #611818;
-        width: 225px;
-        margin-top: 20px;
-        background-image: linear-gradient(left , white 2%, #611818 50%, white 98%);
-        background-image: -o-linear-gradient(left , white 2%, #611818 50%, white 98%);
-        background-image: -moz-linear-gradient(left , white 2%, #611818 50%, white 98%);
-        background-image: -webkit-linear-gradient(left , white 2%, #611818 50%, white 98%);
-        background-image: -ms-linear-gradient(left , white 2%, #611818 50%, white 98%);
-        background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.0, #611818), color-stop(0.98, white) );
+		height: 2px;
+		background-color: #611818;
+		width: 225px;
+		margin-top: 20px;
+		background-image: linear-gradient(left , white 2%, #611818 50%, white 98%);
+		background-image: -o-linear-gradient(left , white 2%, #611818 50%, white 98%);
+		background-image: -moz-linear-gradient(left , white 2%, #611818 50%, white 98%);
+		background-image: -webkit-linear-gradient(left , white 2%, #611818 50%, white 98%);
+		background-image: -ms-linear-gradient(left , white 2%, #611818 50%, white 98%);
+		background-image: -webkit-gradient( linear, left bottom, right bottom, color-stop(0.0, #611818), color-stop(0.98, white) );
 	  }
 	  #hide {
 		z-index: 1000;
